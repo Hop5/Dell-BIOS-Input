@@ -43,6 +43,10 @@ void setup() {
   Keyboard.press(KEY_RETURN);
   delay(10);
   Keyboard.releaseAll();
+  Keyboard.print("sudo dmidecode | grep Serial");
+  Keyboard.press(KEY_RETURN);
+  delay(10);
+  Keyboard.releaseAll();
   Keyboard.end();
   
 }
