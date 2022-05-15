@@ -34,6 +34,7 @@ void setup() {
   Keyboard.releaseAll();
   delay(600);
  //Print password
+ 
   Keyboard.print("8@tM@n");
   Keyboard.press(KEY_TAB);
   delay(10);
@@ -47,6 +48,7 @@ void setup() {
   Keyboard.press(KEY_RETURN);
   delay(10);
   Keyboard.releaseAll();
+ //Get Dell service tag from the terminal of live gparted 
   Keyboard.print("sudo dmidecode | grep Serial");
   Keyboard.press(KEY_RETURN);
   delay(10);
